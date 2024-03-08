@@ -2,14 +2,22 @@
 import TabbarLinks from "@/app/ui/tabbars";
 import Link from "next/link";
 import clsx from "clsx";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
+import '../ui/base.css'
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   return (
     <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
       <Link href="/" className="absolute top-4 right-4 text-black">
-        退出
+        <Image
+          src="/icons/close.svg"
+          width={30}
+          height={30}
+          className=""
+          alt="Screenshots of the dashboard project showing desktop version"
+        />
       </Link>
       <div
         className={clsx(

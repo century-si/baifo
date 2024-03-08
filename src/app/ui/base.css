@@ -1,0 +1,7 @@
+.card {
+  @apply flex flex-col flex-wrap text-sm leading-5;
+}
+
+.card li {
+  @apply relative flex flex-shrink-0 flex-col flex-wrap items-stretch;
+}
