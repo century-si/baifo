@@ -13,13 +13,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
       <header
         className={clsx(
-          "flex py-4 w-full",
+          "flex py-4 w-full bg-base-100 px-1",
           isShowHeaderConfig[pathname as keyof typeof isShowHeaderConfig]?.show
             ? ""
             : "hidden"
         )}
       >
-        <span onClick={() => window.history.back()}> {"< 返回"}</span>
+        <button onClick={() => window.history.back()}>
+          <i className="bi bi-chevron-left"></i> {"返回"}
+        </button>
         <span className="flex-1 text-center">
           {
             isShowHeaderConfig[pathname as keyof typeof isShowHeaderConfig]

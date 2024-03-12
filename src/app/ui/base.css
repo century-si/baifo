@@ -6,19 +6,20 @@
   @apply p-2;
 }
 
-.bi::before {
+.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
   display: inline-block;
-  font-family: bootstrap-icons !important;
+  font-size: 18px;
+  font-family: "简体宋体";
   font-style: normal;
-  font-weight: normal !important;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  vertical-align: -.125em;
+  font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.bi-chevron-left::before {
+  content: "<";
+}
+
 .bi-chevron-right::before {
-  content: "\f285";
+  content: ">";
 }

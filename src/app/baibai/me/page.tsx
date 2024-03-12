@@ -22,6 +22,7 @@ export default function Page() {
           >
             <span>拜拜记录</span>
             <span className="text-gray-400 text-sm ml-auto">0 条记录</span>
+            <i className="bi bi-chevron-right text-gray-400 text-sm"></i>
           </Link>
         </li>
         <li>
@@ -31,6 +32,7 @@ export default function Page() {
           >
             <span>每日拜拜提醒</span>
             <span className="text-gray-400 text-sm ml-auto">已关闭</span>
+            <i className="bi bi-chevron-right text-gray-400 text-sm"></i>
           </Link>
         </li>
       </ul>
@@ -40,8 +42,9 @@ export default function Page() {
             className="flex items-center leading-10 px-0"
             htmlFor="like-app-toggle"
           >
-            <img src="" alt="好评鼓励" className="block w-6 h-6" />
+            <img src="/images/acclaim.png" alt="好评鼓励" className="block w-6 h-6 pr-1" />
             <span>好评鼓励</span>
+            <i className="bi bi-chevron-right text-gray-400 text-sm ml-auto"></i>
           </label>
         </li>
         <li className="border-b">
@@ -49,8 +52,9 @@ export default function Page() {
             href={"/baibai/share"}
             className="flex items-center leading-10 px-0"
           >
-            <img src="" alt="推荐分享" className="block w-6 h-6" />
+            <img src="/images/share.png" alt="推荐分享" className="block w-6 h-6 pr-1" />
             <span>推荐分享</span>
+            <i className="bi bi-chevron-right text-gray-400 text-sm ml-auto"></i>
           </Link>
         </li>
         <li>
@@ -58,8 +62,9 @@ export default function Page() {
             href={"/baibai/about"}
             className="flex items-center leading-10 px-0"
           >
-            <img src="" alt="关于拜拜" className="block w-6 h-6" />
+            <img src="/images/about.png" alt="关于拜拜" className="block w-6 h-6 mr-1" />
             <span>关于拜拜</span>
+            <i className="bi bi-chevron-right text-gray-400 text-sm ml-auto"></i>
           </Link>
         </li>
       </ul>
