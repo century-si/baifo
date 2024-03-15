@@ -1,6 +1,15 @@
 import Link from "next/link";
 
-export default function Page() {
+async function getData() {
+  const res = await fetch('http://localhost:3000/api/getData');
+  const data = await res.json();
+  return data;
+}
+
+export default async function Page() {
+  const res = await getData();
+  console.log(res);
+  
   return (
     <main className="flex-1 px-5 pt-8">
       <h1 className="mx-auto text-[30px]">欢迎来拜拜!</h1>
